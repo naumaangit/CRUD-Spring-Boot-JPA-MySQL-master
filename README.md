@@ -1,13 +1,35 @@
 # CRUD-Spring-Boot-JPA-MySQL
 
 # CRUD Example of Spring-Boot-REST-JPA-MySQL (BookStore)
-
 ### 1. You can clone it from github by running following command
 
 ```
   $ git clone https://github.com/niteshsinghrajput/CRUD-Spring-Boot-JPA-MySQL.git
 ```
 
+****************** Via CLI ******************
+### 2. Import src/main/java/resources/book.sql into MySQL database
+```
+$ mysql -u root -p bookstore < /home/naumaansiddiqui/naumaan/CRUD-Spring-Boot-JPA-MySQL-master/src/main/resources/database/book.sql
+```
+### 3. Update database credential and other configuration into application.properties available in src/main/java/resources
+```
+update the application.properties same as 
+```
+
+### 4. Now download the maven dependencies 
+
+```
+RUN 'mvn clean install'
+```
+
+### 5. RUN the application
+
+```
+mvn spring-boot:run
+```
+
+***************** Via Eclipse IDE *****************
 ### 2. Import project into eclipse
 ```
   File -> Import -> Maven -> Existing Maven Projects -> Browse Project from cloned location
